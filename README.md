@@ -36,26 +36,27 @@ Ustawilem maske i ip kazdemu urzadzeniu w config.
 Tez zmienilem nazwe kazdego PC na odpowiadajacy sieci i ip. 
 
 ```
-#### Routing z BGP 10 / bez BGP 5 ❌
+#### Routing z BGP 10 / bez BGP 5 [Hubixo]❌
 
-#### VLAN'y 5 (minimum 4 vlany) ❌
+#### VLAN'y 5 (minimum 4 vlany) [Hubixo] ❌
 
-#### Etherchannel 5 ❌
+#### Etherchannel 5 [wojexe] ❌
 
-#### Redystrybucja 5 (z wersja BGP 10) ❌
+#### Redystrybucja 5 (z wersja BGP 10) [Remigiusz] ❌
 
-#### NAT 10 ❌
+#### NAT 10 [VladKoz]❌
 
-#### DHCP 10 ❌
+#### DHCP 10 [wojexe] ❌
 
-#### Ekstra fiber links w ISP 2 ❌
+#### Ekstra fiber links w ISP 2 [Remigiusz] ❌
 
-#### ACL for WWW,SMTP 5 ❌
+#### ACL for WWW,SMTP 5 [VladKoz]❌
 
-#### Mail serwer 3 ❌
+#### Mail serwer 3 [Remigiusz] ❌
 
-#### Dla ISP dobrac siec publiczna z klasy A dla Klienta A siec publiczna z  klasy C ❌
+### Komentarze od prowadzacego
+ Dla ISP dobrac siec publiczna z klasy A dla Klienta A siec publiczna z  klasy C
 
-#### Dla klientów bez podanych sieci trzeba dobrać siec z puli adresów prywatnych.❌
+ Dla klientów bez podanych sieci trzeba dobrać siec z puli adresów prywatnych.
 
-#### Strony WWW (onu klientow) maja być dostępne ze wszystkich PC  Dla Klienta B dobrać alokacje VLAN'ów. ❌
+ Strony WWW (onu klientow) maja być dostępne ze wszystkich PC  Dla Klienta B dobrać alokacje VLAN'ów. 
