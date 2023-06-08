@@ -16,26 +16,40 @@ Zadanie powinno byc zrobione w pakiet tracerze, plik znajduje sie w folderze.
 Adresacja sieci z najmniejsza liczba adresow:  przerabiamy algorytm z cwiczen, czyli bierzemy ilosc urzadzen+2 po czym liczymy minimalna potege dwojki i z tego dostajemy maske.
 ```
 Siec Customer A:
-    3 urzadzenia. 
-    1.0.0.0 - siec. Maska 255.255.255.248 = /29
+    Podsiec 1.0.1.0 ma 2 urzadzenia  Maska 255.255.255.252 = /30
+    Podsiec 1.0.2.0 ma 3 urzadzenia  Maska 255.255.255.248 = /29
+    Podsiec 1.0.3.0 ma 2 urzadzenia  Maska 255.255.255.252 = /30
+    Podsiec 1.0.4.0 ma 2 urzadzenia  Maska 255.255.255.252 = /30
+    Podsiec 1.0.5.0 ma 2 urzadzenia  Maska 255.255.255.252 = /30
+    Podsiec 1.0.6.0 ma 2 urzadzenia  Maska 255.255.255.252 = /30
 
 Siec Customer B:
-    10 urzadzen. 
+    11 urzadzen. 
     2.0.0.0 - siec. Maska 255.255.255.240 = /28
 
 Siec Customer C:
-    1 urzadzenie. 
+    2 urzadzenia. 
     3.0.0.0 - siec. Maska 255.255.255.252 = /30
 
 Siec Customer D:
-    1 urzadzenie. 
+    2 urzadzenia. 
     4.0.0.0 - siec. Maska 255.255.255.252 = /30
     
-Ustawilem maske i ip kazdemu urzadzeniu w config. 
-Tez zmienilem nazwe kazdego PC na odpowiadajacy sieci i ip. 
+Klasa A
+    podsiec 
+    Podsiec 5.0.1.0 ma 2 urzadzenia  Maska 255.255.255.252 = /30
+    ...
+    Podsiec 5.0.15.0 ma 2 urzadzenia  Maska 255.255.255.252 = /30
 
 ```
-#### Routing z BGP 10 / bez BGP 5 [_Osoba1_]❌
+#### Routing z BGP 10 / bez BGP 5 [_Osoba1_]❌ 
+```
+
+exit
+router bgp 200 
+
+
+```
 
 #### VLAN'y 5 (minimum 4 vlany) [_Osoba1_] ❌
 
