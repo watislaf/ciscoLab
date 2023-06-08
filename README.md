@@ -36,23 +36,23 @@ Ustawilem maske i ip kazdemu urzadzeniu w config.
 Tez zmienilem nazwe kazdego PC na odpowiadajacy sieci i ip. 
 
 ```
-#### Routing z BGP 10 / bez BGP 5 [Hubixo]❌
+#### Routing z BGP 10 / bez BGP 5 [_Hubixo_]❌
 
-#### VLAN'y 5 (minimum 4 vlany) [Hubixo] ❌
+#### VLAN'y 5 (minimum 4 vlany) [_Hubixo_] ❌
 
-#### Etherchannel 5 [wojexe] ❌
+#### Etherchannel 5 [_wojexe_] ❌
 
-#### Redystrybucja 5 (z wersja BGP 10) [Remigiusz] ❌
+#### Redystrybucja 5 (z wersja BGP 10) [_Remigius_] ❌
 
-#### NAT 10 [VladKoz]❌
+#### NAT 10 [_VladKoz_]❌
 
-#### DHCP 10 [wojexe] ❌
+#### DHCP 10 [_wojexe_] ❌
 
-#### Ekstra fiber links w ISP 2 [Remigiusz] ❌
+#### Ekstra fiber links w ISP 2 [_Remigius_] ❌
 
-#### ACL for WWW,SMTP 5 [VladKoz]❌
+#### ACL for WWW,SMTP 5 [_VladKoz_]❌
 
-#### Mail serwer 3 [Remigiusz] ❌
+#### Mail serwer 3 [_Remigius_] ❌
 
 ### Komentarze od prowadzacego
  Dla ISP dobrac siec publiczna z klasy A dla Klienta A siec publiczna z  klasy C
