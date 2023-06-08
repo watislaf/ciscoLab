@@ -42,14 +42,7 @@ Klasa A
     Podsiec 5.0.15.0 ma 2 urzadzenia  Maska 255.255.255.252 = /30
 
 ```
-#### Routing z BGP 10 / bez BGP 5 [_Osoba1_]❌ 
-```
-
-exit
-router bgp 200 
-
-
-```
+#### Routing z BGP 10 / bez BGP 5 [_Osoba1_]❌
 
 #### VLAN'y 5 (minimum 4 vlany) [_Osoba1_] ❌
 
