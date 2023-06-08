@@ -11,7 +11,6 @@ Zadanie powinno byc zrobione w pakiet tracerze, plik znajduje sie w folderze.
 ![img.png](img.png)
  
  
- 
 ## Rozwiazania
  #### Adresacja sieci IPv4 z najmniejszej liczby adresow IP 10 [VladKoz] ✅
 Adresacja sieci z najmniejsza liczba adresow:  przerabiamy algorytm z cwiczen, czyli bierzemy ilosc urzadzen+2 po czym liczymy minimalna potege dwojki i z tego dostajemy maske.
@@ -38,11 +37,11 @@ Tez zmienilem nazwe kazdego PC na odpowiadajacy sieci i ip.
 ```
 #### Routing z BGP 10 / bez BGP 5 [_Hubixo_]❌
 
-#### VLAN'y 5 (minimum 4 vlany) [_Hubixo_] ❌
+#### VLAN'y 5 (minimum 4 vlany) [_Remigius_] ❌
 
 #### Etherchannel 5 [_wojexe_] ❌
 
-#### Redystrybucja 5 (z wersja BGP 10) [_Remigius_] ❌
+#### Redystrybucja 5 (z wersja BGP 10) [_Hubixo_] ❌
 
 #### NAT 10 [_VladKoz_]❌
 
