@@ -1,0 +1,148 @@
+
+Router5_1
+enable
+config terminal
+router eigrp 100
+network 5.0.2.0
+network 5.0.8.0
+network 5.0.1.0
+exit
+ip route 1.0.0.0 255.255.0.0 5.0.2.1
+
+Router5_2
+enable
+config terminal
+router eigrp 100
+network 5.0.2.0
+network 5.0.7.0
+network 5.0.3.0
+exit
+ip route 1.0.0.0 255.255.0.0 5.0.3.2
+
+Router5_8
+enable
+config terminal
+router eigrp 100
+network 5.0.11.0
+network 5.0.7.0
+network 5.0.10.0
+exit
+ip route 1.0.0.0 255.255.0.0 5.0.10.2
+
+
+Router5_3
+enable
+config terminal
+router eigrp 100
+network 5.0.10.0
+network 5.0.3.0
+network 5.0.4.0
+exit
+ip route 1.0.0.0 255.255.0.0 5.0.4.1
+
+
+Router5_4
+enable
+config terminal
+router eigrp 100
+network 5.0.4.0
+network 5.0.5.0
+network 5.0.6.0
+exit
+ip route 1.0.0.0 255.255.0.0 5.0.5.2
+
+Router5_7
+enable
+config terminal
+router eigrp 100
+network 5.0.11.0
+network 5.0.7.0
+network 5.0.12.0
+exit
+ip route 1.0.0.0 255.255.0.0 5.0.7.1
+
+Router5_6
+enable
+config terminal
+router eigrp 100
+network 5.0.6.0
+network 5.0.13.0
+network 5.0.14.0
+exit
+ip route 1.0.0.0 255.255.0.0 5.0.14.1
+
+Router5_5
+enable
+config terminal
+router eigrp 100
+network 5.0.5.0
+network 5.0.14.0
+network 5.0.15.0
+exit
+router bgp 100
+neighbor 5.0.15.1 remote-as 200
+network 5.0.1.0 mask 255.255.255.252
+network 5.0.2.0 mask 255.255.255.252
+network 5.0.3.0 mask 255.255.255.252
+network 5.0.4.0 mask 255.255.255.252
+network 5.0.5.0 mask 255.255.255.252
+network 5.0.6.0 mask 255.255.255.252
+network 5.0.7.0 mask 255.255.255.252
+network 5.0.8.0 mask 255.255.255.252
+network 5.0.10.0 mask 255.255.255.252
+network 5.0.11.0 mask 255.255.255.252
+network 5.0.12.0 mask 255.255.255.252
+network 5.0.13.0 mask 255.255.255.252
+network 5.0.14.0 mask 255.255.255.252
+network 5.0.15.0 mask 255.255.255.252
+exit
+
+Router1_2
+enable
+config terminal
+router eigrp 200
+network 5.0.15.0
+network 1.0.3.0
+network 1.0.6.0
+exit
+router bgp 200
+neighbor 5.0.15.2 remote-as 100
+network 5.0.15.0 mask 255.255.255.252
+network 1.0.1.0 mask 255.255.255.252
+network 1.0.2.0 mask 255.255.255.248
+network 1.0.3.0 mask 255.255.255.252
+network 1.0.4.0 mask 255.255.255.252
+network 1.0.5.0 mask 255.255.255.252
+network 1.0.6.0 mask 255.255.255.252
+exit
+
+Router1_1_2
+enable
+config terminal
+router eigrp 200
+network 1.0.3.0
+network 1.0.4.0
+network 1.0.1.0
+exit
+ip route 5.0.0.0 255.255.0.0 1.0.3.1
+
+Router1_1
+enable
+config terminal
+router eigrp 200
+network 1.0.5.0
+network 1.0.4.0
+exit
+ip route 5.0.0.0 255.255.0.0 1.0.4.2
+
+
+Router1_2_3
+enable
+config terminal
+router eigrp 200
+network 1.0.5.0
+network 1.0.2.0
+network 1.0.6.0
+exit
+ip route 5.0.0.0 255.255.0.0 1.0.6.1
+
