@@ -12,7 +12,7 @@ Zadanie powinno byc zrobione w pakiet tracerze, plik znajduje sie w folderze.
  
  
 ## Rozwiazania
- #### Adresacja sieci IPv4 z najmniejszej liczby adresow IP 10 [VladKoz] ✅
+ #### 1. Adresacja sieci IPv4 z najmniejszej liczby adresow IP 10 [VladKoz] ✅
 Adresacja sieci z najmniejsza liczba adresow:  przerabiamy algorytm z cwiczen, czyli bierzemy ilosc urzadzen+2 po czym liczymy minimalna potege dwojki i z tego dostajemy maske.
 ```
 Siec Customer A:
@@ -42,27 +42,26 @@ Klasa A
     Podsiec 5.0.15.0 ma 2 urzadzenia  Maska 255.255.255.252 = /30
 
 ```
-#### Routing z BGP 10 / bez BGP 5 [_Osoba1_]❌
+#### 2. Routing z BGP 10 / bez BGP 5 [_VladKoz_]❌
 
-#### VLAN'y 5 (minimum 4 vlany) [_Osoba1_] ❌
+#### 3. VLAN'y 5 (minimum 4 vlany) [_Hubixo_] ❌
 
-#### Etherchannel 5 [_Osoba2_] ❌
+#### 4. Etherchannel 5 [] ❌(nie ma zaleznosci?) 
 
-#### Redystrybucja 5 (z wersja BGP 10) [_Osoba2_] ❌
+#### 5. Redystrybucja 5 (z wersja BGP 10) [] (zalezy od 2.) ❌
 
-#### NAT 10 [_Osoba3_]❌
+#### 6. NAT 10 []❌ (nie ma zaleznosci?)
 
-#### DHCP 10 [_Osoba3_] ❌
+#### 7. DHCP 10 [] ❌ (nie ma zaleznosci?)
 
-#### Ekstra fiber links w ISP 2 [_Osoba4_] ❌
+#### 8. Ekstra fiber links w ISP 2 [] ❌ (nie ma zaleznosci?)
+    Dla ISP dobrac siec publiczna z klasy A dla Klienta A siec publiczna z  klasy C
 
-#### ACL for WWW,SMTP 5 [_Osoba4_]❌
 
-#### Mail serwer 3 [_Osoba4_] ❌
+#### 9. ACL for WWW,SMTP 5 []❌ (zalezy od 3.)
+    Strony WWW (obu klientow) maja być dostępne ze wszystkich PC  Dla Klienta B dobrać alokacje VLAN'ów.
+
+#### 10. Mail serwer 3 [] ❌ (nie ma zaleznosci?)
 
 ### Komentarze od prowadzacego
- Dla ISP dobrac siec publiczna z klasy A dla Klienta A siec publiczna z  klasy C
-
- Dla klientów bez podanych sieci trzeba dobrać siec z puli adresów prywatnych.
-
- Strony WWW (onu klientow) maja być dostępne ze wszystkich PC  Dla Klienta B dobrać alokacje VLAN'ów. 
+ Dla klientów bez podanych sieci trzeba dobrać siec z puli adresów prywatnych. (co ????)
