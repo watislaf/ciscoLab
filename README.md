@@ -15,7 +15,7 @@ Zadanie powinno byc zrobione w pakiet tracerze, plik znajduje sie w folderze.
  #### 1. Adresacja sieci IPv4 z najmniejszej liczby adresow IP 10 [VladKoz] ✅
 Adresacja sieci z najmniejsza liczba adresow:
 przerabiamy algorytm z cwiczen, czyli bierzemy ilosc urzadzen+2 po czym liczymy minimalna potege dwojki i z tego dostajemy maske.
-```
+```bash
 Siec Customer A:
     Podsiec 1.0.1.0 ma 2 urzadzenia  Maska 255.255.255.252 = /30
     Podsiec 1.0.2.0 ma 3 urzadzenia  Maska 255.255.255.248 = /29
@@ -48,7 +48,7 @@ Po tych zmianach kazdy sieciowy interfejsc (poza interfejsami switczow bo nie po
 
 
 Dla wszystkich routerow w AS z numerem D:
-```
+```bash
 enable
 config terminal
 router eigrp D
@@ -90,12 +90,14 @@ dla wszystkich urzadzen na ip routera w tym vlanie.
 #### 7. DHCP 10 [] ❌ (nie ma zaleznosci?)
 
 #### 8. Ekstra fiber links w ISP 2 [] ❌ (nie ma zaleznosci?)
-    Dla ISP dobrac siec publiczna z klasy A dla Klienta A siec publiczna z  klasy C
-
+```
+Dla ISP dobrac siec publiczna z klasy A dla Klienta A siec publiczna z  klasy C
+```
 
 #### 9. ACL for WWW,SMTP 5 []❌ (zalezy od 3.)
-    Strony WWW (obu klientow) maja być dostępne ze wszystkich PC  Dla Klienta B dobrać alokacje VLAN'ów.
-
+```
+Strony WWW (obu klientow) maja być dostępne ze wszystkich PC  Dla Klienta B dobrać alokacje VLAN'ów.
+```
 #### 10. Mail serwer 3 [] ❌ (nie ma zaleznosci?)
 
 ### Komentarze od prowadzacego
