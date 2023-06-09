@@ -44,7 +44,7 @@ Klasa A
 
 ```
 Po tych zmianach kazdy sieciowy interfejsc (poza interfejsami switczow bo nie potrzebuja) ma swoj IP. 
-#### 2. Routing z BGP 10  [_VladKoz_]❌
+#### 2. Routing z BGP 10  [_VladKoz_]✅
 
 
 Dla wszystkich routerow w AS z numerem D:
@@ -74,7 +74,130 @@ exit
 Po tych zmianach urzadzenia z sieci klasy A (AS 100) moga sie komunikowac z urzadzeniami sieci klasy C (AS 200) za pomoca BGP.
 
 
-#### 3. VLAN'y 5 (minimum 4 vlany) [_Hubixo_] ❌
+
+#### 3. VLAN'y 5 (minimum 4 vlany) [_VladKoz_] ✅
+switch2_2
+enable 
+conf terminal
+vlan 1
+name one
+exit
+vlan 2
+name two
+exit
+vlan 3
+name three
+exit
+vlan 4
+name four
+exit
+interface Fa0/6 
+switchport mode access
+switchport access vlan 3
+exit
+interface Fa0/7
+switchport mode access
+switchport access vlan 4
+exit
+interface Gig0/2
+switchport mode trunk
+exit
+interface Gig0/1
+switchport mode trunk
+exit
+
+switch2_3
+enable
+conf terminal
+vlan 1
+name one
+exit
+vlan 2
+name two
+exit
+vlan 3
+name three
+exit
+vlan 4
+name four
+exit
+interface Fa0/1 
+switchport mode access
+switchport access vlan 3
+exit
+interface Fa0/23
+switchport mode access
+switchport access vlan 4
+exit
+interface Gig0/2
+switchport mode trunk
+exit
+interface Fa0/24
+switchport mode trunk
+exit
+
+switch2_1
+enable
+conf terminal
+vlan 1
+name one
+exit
+vlan 2
+name two
+exit
+vlan 3
+name three
+exit
+vlan 4
+name four
+exit
+interface Fa0/1
+switchport mode access
+switchport access vlan 2
+exit
+interface Fa0/2
+switchport mode access
+switchport access vlan 2
+exit
+interface Gig0/1
+switchport mode trunk
+exit
+
+
+switch2_4
+enable
+conf terminal
+vlan 1
+name one
+exit
+vlan 2
+name two
+exit
+vlan 3
+name three
+exit
+vlan 4
+name four
+exit
+interface Fa0/1 
+switchport mode access
+switchport access vlan 1
+exit
+interface Fa0/2
+switchport mode access
+switchport access vlan 1
+exit
+interface Fa0/4
+switchport mode access
+switchport access vlan 1
+exit
+interface Fa0/5
+switchport mode access
+switchport access vlan 1
+exit
+interface Fa0/24
+switchport mode trunk
+exit
 
 #### 4. Etherchannel 5 [] ❌(nie ma zaleznosci?) 
 
