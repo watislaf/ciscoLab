@@ -130,17 +130,17 @@ enable
 conf t
 int Gig0/1.1
 encapsulation dot1q 1
-ip add 2.1.0.5 255.255.255.248
+ip add 10.1.0.5 255.255.255.248
 exit
 int Gig0/1.2
 encapsulation dot1q 2
-ip add 2.2.0.3 255.255.255.248
+ip add 10.2.0.3 255.255.255.248
 exit
 int Gig0/1.3
 encapsulation dot1q 3
-ip add 2.3.0.3 255.255.255.248
+ip add 10.3.0.3 255.255.255.248
 exit
 int Gig0/1.4
 encapsulation dot1q 4
-ip add 2.4.0.3 255.255.255.248
+ip add 10.4.0.3 255.255.255.248
 exit

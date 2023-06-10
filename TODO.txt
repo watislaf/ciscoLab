@@ -1,11 +1,1 @@
 TODO list:
-
-add ip to PC2_7
-2.1.0.3
-255.255.255.248
-
-add BGP_EIGRP_REDISTRIBUTION
-
-apply email_server
-
-apply etherchannel

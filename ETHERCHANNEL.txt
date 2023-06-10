@@ -1,24 +1,21 @@
 dodac connection pomiedzy switch2_2e switch2_3 na Fa0/9
 
 switch2_2
-
-Switch>en
-Switch#configure t	
-Switch(config)#interface range fa0/20-21
-Switch(config-if-range)#channel-group 1 mode active
-Switch(config-if-range)#interface port-channel 1
-Switch(config-if)#switchport mode trunk 
-Switch(config-if)#no shutdown 
-Switch(config-if)#exit
+en
+configure t
+interface range fa0/20-21
+channel-group 1 mode active
+interface port-channel 1
+switchport mode trunk
+no shutdown
+exit
 
 switch2_3
-
-Switch>en
-Switch#configure t	
-Switch(config)#interface range fa0/20-21
-Switch(config-if-range)#channel-group 1 mode active
-Switch(config-if-range)#interface port-channel 1
-Switch(config-if)#switchport mode trunk 
-Switch(config-if)#no shutdown 
-Switch(config-if)#exit
-
+en
+configure t
+interface range fa0/20-21
+channel-group 1 mode active
+interface port-channel 1
+switchport mode trunk
+no shutdown
+exit
