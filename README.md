@@ -84,6 +84,8 @@ dla wszystkich urzadzen na ip routera w tym vlanie.
 #### 4. Etherchannel 5 [] ❌(nie ma zaleznosci?) 
 
 #### 5. Redystrybucja 5 (z wersja BGP 10) [] (zalezy od 2.) ❌
+Redystrybucja pozwala na wymiane routami pomiedzy roznymi sieciowymi protokolami. Po polaczeniu EIGRP i BGP kazde urzadzenie w sieci 
+eigrp ma dostep do sciezek z innego BGP.
 
 #### 6. NAT 10 []❌ (nie ma zaleznosci?)
 

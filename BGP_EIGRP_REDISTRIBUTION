@@ -1,0 +1,19 @@
+Router5_5
+enable
+config t
+router bgp 100
+redistribute eigrp 100
+exit
+router eigrp 100
+redistribute bgp 100 metric 1000 10 255 255 1500
+exit
+
+Router1_2
+enable
+config t
+router bgp 200
+redistribute eigrp 200
+exit
+router eigrp 200
+redistribute bgp 200 metric 1000 10 255 255 1500
+exit
