@@ -82,7 +82,30 @@ Po tych zmianach vlan X nie jest dostepny z Vlan Y.
 Zmienic router: dodac wszystkie i ip addresy do routera w tych vlanach, tez podmienic default gateway 
 dla wszystkich urzadzen na ip routera w tym vlanie.
 
-#### 4. Etherchannel 5 [_VladKoz_] ✅
+#### 4. Etherchannel 5 [_Hubixo_] ✅
+```bash
+switch2_2
+
+Switch>en
+Switch#configure t	
+Switch(config)#interface range fa0/20-21
+Switch(config-if-range)#channel-group 1 mode active
+Switch(config-if-range)#interface port-channel 1
+Switch(config-if)#switchport mode trunk 
+Switch(config-if)#no shutdown 
+Switch(config-if)#exit
+
+switch2_3
+
+Switch>en
+Switch#configure t	
+Switch(config)#interface range fa0/20-21
+Switch(config-if-range)#channel-group 1 mode active
+Switch(config-if-range)#interface port-channel 1
+Switch(config-if)#switchport mode trunk 
+Switch(config-if)#no shutdown 
+Switch(config-if)#exit
+```
 Teraz 2 switchy sa ktore polaczone 2 przewodami. Tez wziety pod uwage vlan.
 
 #### 5. Redystrybucja z wersja BGP 10 [_VladKoz_] ✅
