@@ -5,3 +5,5 @@ add ip to PC2_7
 255.255.255.248
 
 add BGP_EIGRP_REDISTRIBUTION
+
+apply email_server

@@ -1,0 +1,17 @@
+Server2_10
+services -> mail server
+domain name @gmail.rom
+add user XXX with password YYY
+
+
+PC2_4
+Desktop -> email
+UserInfo:
+         name: XXX
+email address: XXX@gmail.com
+server-in: 2.4.0.1
+server-out: 2.4.0.1
+login XXX
+password YYY
+>> save
+send mail
