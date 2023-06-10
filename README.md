@@ -19,23 +19,19 @@ przerabiamy algorytm z cwiczen, czyli bierzemy ilosc urzadzen+2 po czym liczymy 
 ```bash
 Siec Customer A:
     Podsiec 1.0.1.0 ma 2 urzadzenia  Maska 255.255.255.252 = /30
-    Podsiec 1.0.2.0 ma 3 urzadzenia  Maska 255.255.255.248 = /29
+    Podsiec 1.0.2.0 ma 30 urzadzen  Maska 255.255.255.224 = /27
     Podsiec 1.0.3.0 ma 2 urzadzenia  Maska 255.255.255.252 = /30
     Podsiec 1.0.4.0 ma 2 urzadzenia  Maska 255.255.255.252 = /30
     Podsiec 1.0.5.0 ma 2 urzadzenia  Maska 255.255.255.252 = /30
     Podsiec 1.0.6.0 ma 2 urzadzenia  Maska 255.255.255.252 = /30
 
-Siec Customer B:
-    11 urzadzen. 
-    2.0.0.0 - siec. Maska 255.255.255.240 = /28
-
 Siec Customer C:
-    2 urzadzenia. 
-    3.0.0.0 - siec. Maska 255.255.255.252 = /30
+    32 urzadzenia. 
+    10.0.0.0 - siec. Maska 255.255.255.192 = /26
 
 Siec Customer D:
-    2 urzadzenia. 
-    4.0.0.0 - siec. Maska 255.255.255.252 = /30
+    510 urzadzenia. 
+    10.0.0.0 - siec. Maska 255.255.254.0 = /23
     
 Klasa A
     podsiec 
@@ -82,7 +78,7 @@ Po tych zmianach vlan X nie jest dostepny z Vlan Y.
 Zmienic router: dodac wszystkie i ip addresy do routera w tych vlanach, tez podmienic default gateway 
 dla wszystkich urzadzen na ip routera w tym vlanie.
 
-#### 4. Etherchannel 5 [_VladKoz_] ✅
+#### 4. Etherchannel 5 [_Hubixo_] ✅
 Teraz 2 switchy sa ktore polaczone 2 przewodami. Tez wziety pod uwage vlan.
 
 #### 5. Redystrybucja z wersja BGP 10 [_VladKoz_] ✅
@@ -94,7 +90,7 @@ eigrp ma dostep do sciezek z innego BGP.
 #### 7. DHCP 10 [] ❌ 
 
 #### 8. Ekstra fiber links w ISP 2 [] ❌
-```
+`````
 Dla ISP dobrac siec publiczna z klasy A dla Klienta A siec publiczna z  klasy C
 ```
 

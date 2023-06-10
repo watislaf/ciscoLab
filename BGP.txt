@@ -109,7 +109,7 @@ router bgp 200
 neighbor 5.0.15.2 remote-as 100
 network 5.0.15.0 mask 255.255.255.252
 network 1.0.1.0 mask 255.255.255.252
-network 1.0.2.0 mask 255.255.255.248
+network 1.0.2.0 mask 255.255.255.224
 network 1.0.3.0 mask 255.255.255.252
 network 1.0.4.0 mask 255.255.255.252
 network 1.0.5.0 mask 255.255.255.252
@@ -145,4 +145,3 @@ network 1.0.2.0
 network 1.0.6.0
 exit
 ip route 5.0.0.0 255.255.0.0 1.0.6.1
-
