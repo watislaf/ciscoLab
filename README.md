@@ -93,12 +93,12 @@ eigrp ma dostep do sciezek z innego BGP.
 
 #### 7. DHCP 10 [] ❌ 
 
-#### 8. Ekstra fiber links w ISP 2 [] ❌ (nie ma zaleznosci?)
+#### 8. Ekstra fiber links w ISP 2 [] ❌
 ```
 Dla ISP dobrac siec publiczna z klasy A dla Klienta A siec publiczna z  klasy C
 ```
 
-#### 9. ACL for WWW,SMTP 5 []❌ (zalezy od 3.)
+#### 9. ACL for WWW,SMTP 5 []❌  
 ```
 Strony WWW (obu klientow) maja być dostępne ze wszystkich PC  Dla Klienta B dobrać alokacje VLAN'ów.
 ```
