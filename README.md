@@ -1,5 +1,5 @@
 
-# ciscoLab ![](https://geps.dev/progress/61) (43/70)
+# ciscoLab ![](https://geps.dev/progress/61) (53/70)
 Osoby:
 * Hubixo
 * Remigiusz
@@ -87,10 +87,10 @@ eigrp ma dostep do sciezek z innego BGP.
 
 #### 6. NAT 10 []❌
 
-#### 7. DHCP 10 [] ❌ 
+#### 7. DHCP 10 [_wojexe_]  ✅
 
 #### 8. Ekstra fiber links w ISP 2 [] ❌
-`````
+```
 Dla ISP dobrac siec publiczna z klasy A dla Klienta A siec publiczna z  klasy C
 ```
 
