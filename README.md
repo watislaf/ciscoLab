@@ -1,5 +1,5 @@
 
-# ciscoLab ![](https://geps.dev/progress/61) (53/70)
+# ciscoLab ![](https://geps.dev/progress/76) (53/70)
 Osoby:
 * Hubixo
 * Remigiusz
@@ -41,10 +41,11 @@ Klasa A
 
 ```
 Po tych zmianach kazdy sieciowy interfejsc (poza interfejsami switczow bo nie potrzebuja) ma swoj IP. 
+
 #### 2. Routing z BGP 10  [_VladKoz_]✅
 
-
 Dla wszystkich routerow w AS z numerem D:
+
 ```bash
 enable
 config terminal
@@ -68,38 +69,47 @@ network T2...
 ]
 exit
 ```
+
 Po tych zmianach urzadzenia z sieci klasy A (AS 100) moga sie komunikowac z urzadzeniami sieci klasy C (AS 200) za pomoca BGP.
 
-
-
 #### 3. VLAN'y 5 (4 vlany) [_VladKoz_] ✅
+
 Wszystkie vlany sa wypisane dla kazdego switcha. Kazdy ip interface znajduje sie w jednym vlanie. 
 Po tych zmianach vlan X nie jest dostepny z Vlan Y.
 Zmienic router: dodac wszystkie i ip addresy do routera w tych vlanach, tez podmienic default gateway 
 dla wszystkich urzadzen na ip routera w tym vlanie.
 
 #### 4. Etherchannel 5 [_Hubixo_] ✅
+
 Teraz 2 switchy sa ktore polaczone 2 przewodami. Tez wziety pod uwage vlan.
 
 #### 5. Redystrybucja z wersja BGP 10 [_VladKoz_] ✅
+
 Redystrybucja pozwala na wymiane routami pomiedzy roznymi sieciowymi protokolami. Po polaczeniu EIGRP i BGP kazde urzadzenie w sieci 
 eigrp ma dostep do sciezek z innego BGP.
 
-#### 6. NAT 10 []❌
+#### 6. NAT 10 [] ❌
 
 #### 7. DHCP 10 [_wojexe_]  ✅
 
+Dodane zostało automatyczne przydzielanie adresów IP dla komputerów w sieci Customer B.
+Jeśli na urządzeniu zostanie wybrana opcja **DHCP** w sekcji *Desktop / IP Configuration*, DHCP serwer (u nas Router2_1) nada jeden z dostępnych adresów IP requestującemu urządzeniu.
+
 #### 8. Ekstra fiber links w ISP 2 [] ❌
+
 ```
 Dla ISP dobrac siec publiczna z klasy A dla Klienta A siec publiczna z  klasy C
 ```
 
 #### 9. ACL for WWW,SMTP 5 []❌  
+
 ```
 Strony WWW (obu klientow) maja być dostępne ze wszystkich PC  Dla Klienta B dobrać alokacje VLAN'ów.
 ```
 #### 10. Mail serwer 3 [_VladKoz_] ✅
+
  Teraz da sie wysylac maili za pomoca Server2_10 z komputera PC2_4 na PC2_4 na przyklad.
 
 ### Komentarze od prowadzacego
+
  Dla klientów bez podanych sieci trzeba dobrać siec z puli adresów prywatnych. (co ????)
