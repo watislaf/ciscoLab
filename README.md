@@ -1,5 +1,5 @@
 
-# ciscoLab ![](https://geps.dev/progress/54) (38/70)
+# ciscoLab ![](https://geps.dev/progress/61) (43/70)
 Osoby:
 * Hubixo
 * Remigiusz
@@ -82,15 +82,16 @@ Po tych zmianach vlan X nie jest dostepny z Vlan Y.
 Zmienic router: dodac wszystkie i ip addresy do routera w tych vlanach, tez podmienic default gateway 
 dla wszystkich urzadzen na ip routera w tym vlanie.
 
-#### 4. Etherchannel 5 [] ❌(nie ma zaleznosci?) 
+#### 4. Etherchannel 5 [_VladKoz_] ✅
+Teraz 2 switchy sa ktore polaczone 2 przewodami. Tez wziety pod uwage vlan.
 
 #### 5. Redystrybucja z wersja BGP 10 [_VladKoz_] ✅
 Redystrybucja pozwala na wymiane routami pomiedzy roznymi sieciowymi protokolami. Po polaczeniu EIGRP i BGP kazde urzadzenie w sieci 
 eigrp ma dostep do sciezek z innego BGP.
 
-#### 6. NAT 10 []❌ (nie ma zaleznosci?)
+#### 6. NAT 10 []❌
 
-#### 7. DHCP 10 [] ❌ (nie ma zaleznosci?)
+#### 7. DHCP 10 [] ❌ 
 
 #### 8. Ekstra fiber links w ISP 2 [] ❌ (nie ma zaleznosci?)
 ```

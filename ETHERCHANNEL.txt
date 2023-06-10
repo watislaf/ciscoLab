@@ -1,0 +1,29 @@
+dodac connection pomiedzy switch2_3 switch2_3 na Fa0/9
+
+switch2_2
+enable
+configure t
+interface port-channel 1
+exit
+interface Fa0/9
+channel-group 1 mode active
+switchport mode trunk
+exit
+
+interface Gig0/2
+channel-group 1 mode active
+exit
+
+
+switch2_3
+enable
+configure t
+interface port-channel 1
+exit
+interface Fa0/9
+channel-group 1 mode active
+switchport mode trunk
+exit
+interface Gig0/2
+channel-group 1 mode active
+exit

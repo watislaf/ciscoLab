@@ -7,3 +7,5 @@ add ip to PC2_7
 add BGP_EIGRP_REDISTRIBUTION
 
 apply email_server
+
+apply etherchannel
