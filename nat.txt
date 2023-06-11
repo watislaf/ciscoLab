@@ -1,0 +1,50 @@
+Router3_2
+Enable
+Configure terminal
+Ip nat pool net-1 5.0.12.1 5.0.12.1 netmask 255.255.255.252
+Access-list 1 permit 10.0.0.0 0.0.0.63
+ip nat inside source list 1 pool net-1 overload
+Interface Gig0/0
+Ip nat outside
+Exit
+Interface Gig0/1
+Ip nat inside
+End
+
+Router 4_2
+Enable
+Configure terminal
+Ip nat pool net-2 5.0.13.1 5.0.13.1 netmask 255.255.255.252
+Access-list 1 permit 10.0.0.0 0.0.1.255
+ip nat inside source list 1 pool net-2 overload
+Interface Gig0/0
+Ip nat outside
+Exit
+Interface Gig0/1
+Ip nat inside
+End
+Router 2_1
+Enable
+Configure terminal
+Ip nat pool net-2 5.0.1.1 5.0.1.1 netmask 255.255.255.252
+Access-list 1 permit 10.0.0.0 0.255.255.255
+ip nat inside source list 1 pool net-2 overload
+Interface Gig0/0
+Ip nat outside
+exit
+Interface Gig0/1
+Ip nat inside
+exit
+Interface Gig0/1.2
+Ip nat inside
+exit
+Interface Gig0/1.3
+Ip nat inside
+exit
+Interface Gig0/1.4
+Ip nat inside
+exit
+Interface Gig0/1.5
+Ip nat inside
+exit
+End

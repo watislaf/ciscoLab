@@ -1,5 +1,5 @@
 
-# ciscoLab ![](https://geps.dev/progress/76) (53/70)
+# ciscoLab ![](https://geps.dev/progress/94) (63/70)
 Osoby:
 * Hubixo
 * Remigiusz
@@ -88,20 +88,20 @@ Teraz 2 switchy sa ktore polaczone 2 przewodami. Tez wziety pod uwage vlan.
 Redystrybucja pozwala na wymiane routami pomiedzy roznymi sieciowymi protokolami. Po polaczeniu EIGRP i BGP kazde urzadzenie w sieci 
 eigrp ma dostep do sciezek z innego BGP.
 
-#### 6. NAT 10 [] ❌
-
+#### 6. NAT 10 [_Hubixo_] ✅
+ Nat laczy 3 privatne sieci pomiedzy soba.
 #### 7. DHCP 10 [_wojexe_]  ✅
 
 Dodane zostało automatyczne przydzielanie adresów IP dla komputerów w sieci Customer B.
 Jeśli na urządzeniu zostanie wybrana opcja **DHCP** w sekcji *Desktop / IP Configuration*, DHCP serwer (u nas Router2_1) nada jeden z dostępnych adresów IP requestującemu urządzeniu.
 
-#### 8. Ekstra fiber links w ISP 2 [] ❌
+#### 8. Ekstra fiber links w ISP 2 [_Remigiusz_] ❌
 
 ```
 Dla ISP dobrac siec publiczna z klasy A dla Klienta A siec publiczna z  klasy C
 ```
 
-#### 9. ACL for WWW,SMTP 5 []❌  
+#### 9. ACL for WWW,SMTP 5 [_Remigiusz_]❌  
 
 ```
 Strony WWW (obu klientow) maja być dostępne ze wszystkich PC  Dla Klienta B dobrać alokacje VLAN'ów.
