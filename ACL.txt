@@ -1,9 +1,0 @@
-Router 1_2
-enable
-conf t
-access-list 100 permit tcp any host 1.0.1.1 eq www
-access-list 100 permit tcp any host 1.0.1.1 eq smtp
-access-list 100 permit tcp any host 1.0.1.1 eq pop3
-access-list 100 permit tcp any any eq 179
-int Gig0/0
-ip access-group 100 in
