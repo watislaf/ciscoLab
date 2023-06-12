@@ -1,4 +1,4 @@
-# ciscoLab ![](https://geps.dev/progress/94) (63/70)
+# ciscoLab ![](https://geps.dev/progress/100) (70/70)
 
 Osoby:
 
